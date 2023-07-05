@@ -1,0 +1,11 @@
+<div class="container-fluid row">
+    <div class="col-md-5">
+        <app-recipe-list (selected)="selectedEl($event)"></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipe-detail [selectrecipe]=" selectrecipe"></app-recipe-detail>
+        <!-- <ng-template #info>
+            please select a recipe
+        </ng-template> -->
+    </div>
+</div>
